@@ -102,3 +102,7 @@ attemptsDropdown.addEventListener("change", function () {
   maxAttempts = parseInt(attemptsDropdown.value);
   GuessesRemaining.innerHTML = `${maxAttempts - countGuesses}`;
 });
+const restartGamebtn = document.getElementById("restart");
+restartGamebtn.addEventListener("click", function () {
+  newGame();
+});
