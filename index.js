@@ -1,3 +1,9 @@
+window.addEventListener("load", function (e) {
+  setTimeout(function () {
+    alert("Welcome to My Website!");
+  }, 2000);
+});
+
 const form = document.querySelector("form");
 let randomNumber = Math.floor(Math.random() * 100 + 1);
 const submitBtn = document.querySelector("#subt");
@@ -106,3 +112,6 @@ const restartGamebtn = document.getElementById("restart");
 restartGamebtn.addEventListener("click", function () {
   newGame();
 });
+// const greetingUser = function () {
+//   alert("welcome to my Website");
+// };
